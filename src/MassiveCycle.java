@@ -5,29 +5,27 @@ public class MassiveCycle {
     public static void main(String[] args) {
 
         Scanner myScanner = new Scanner(System.in);
-
         int shiftPos;
 
         System.out.println("Введите число позиций для сдвига вправо: ");
         shiftPos = myScanner.nextInt();
 
-        int k = 0;
-        int m = shiftPos;
         int array[] = {1,2,3,4,5,6};
-        int array1[] = new int[12];
+        int tmp[] = new int[6];
+        shiftPos = shiftPos % array.length;
 
-
-        for (int i = 0; i < shiftPos; i++) {
-            for (int j = shiftPos; j >= shiftPos; j++) {
-
-                 array1[j] = array[m++];
-                 //arrayRight [j] = array[m++];
-             }
-
-            array[k] = array[k++];
-
+        for (int i=0; i < shiftPos; i++){
+            for (int j = 0 ; j + shiftPos < array.length; j++){
+                tmp[j + shiftPos] = array[j];
+         }
+         tmp[shiftPos - i - 1] = array[array.length - i - 1];
         }
 
-        System.out.println(Arrays.toString(array1));
+      if (shiftPos == 0){
+          System.out.println(Arrays.toString(array));
+      }else{System.out.println(Arrays.toString(tmp));}
     }
 }
+
+
+
