@@ -1,4 +1,6 @@
-    import java.net.SocketPermission;
+package lect2;
+
+import java.net.SocketPermission;
     import java.util.Arrays;
     import java.util.Scanner;
 

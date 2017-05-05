@@ -1,3 +1,5 @@
+package lect2;
+
 import sun.java2d.pipe.SolidTextRenderer;
 
 import java.util.Arrays;
