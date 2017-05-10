@@ -26,7 +26,8 @@ public class Matrix {
     public static void main(String[] args) {
         Matrix matrixA = new Matrix(9, 9);
 
-        System.out.println(Arrays.deepToString(matrixA.getMatrix()));
+        int array[][] = matrixA.getMatrix();
+        System.out.println(array);
     }
 }
 
