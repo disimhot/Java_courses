@@ -2,21 +2,26 @@ package lect3.medium;
 
 import sun.font.TrueTypeFont;
 
+class Singleton {
+    float minGrade;
+    int yearsOfStudy;
+    String armyRespite;
+    String major;
 
-public final class Singleton {
-    //Единственный экземпляр класса
-    private static Singleton instance;
-
-    //Конструктор объявляем приватным
-    private Singleton() {}
-
-    public static Singleton getInstance() {
-        if (instance == null){
-            instance = new Singleton();
-        }
-        return instance;
+    private Singleton(float minGrade, int yearsOfStudy, String armyRespite, String major) {
+        this.minGrade = minGrade;
+        this.yearsOfStudy = yearsOfStudy;
+        this.armyRespite = armyRespite;
+        this.major = major;
     }
+
 
 }
 
+class Student {
+    public static void main(String[] args) {
+    Singleton Jane =
 
+
+    }
+}
